@@ -1,3 +1,18 @@
+static class Receipt {
+	 List<Item> listItems = new ArrayList<Item>();
+
+	 public void addItem(Item item){
+			 listItems.add(item);
+	 }
+
+	 public void removeItem(Item item){
+			 listItems.remove(item);
+	 }
+
+
+
+}
+
 static class Item {
 	int id;
 	String name;
