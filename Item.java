@@ -6,13 +6,37 @@ static class Item {
 	public int B = 5;
 	public int V = 0;
 
-	//TODO add variable.
+	public Item(int id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+  }
 
-	//TODO constructor
+  public int getID(){
+      return id;
+  }
 
-	//TODO setters and getters
+  public String getName(){
+      return name;
+  }
+
+  public double getPrice(){
+      return price;
+  }
+
+  public void setID(int id){
+      this.id = id;
+  }
+
+  public void setName(String name){
+      this.name = name;
+  }
+
+  public void setPrice(double price){
+      this.price = price;
+  }
 
 	double taxReturn () {
-		//TODO
+		return (price * 15)/100;
 	}
 }
